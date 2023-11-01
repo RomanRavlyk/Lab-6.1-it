@@ -20,6 +20,7 @@ int main() {
 
 	cout << "Original array: ";
 	printArray(t, arrSize);
+	cout << endl;
 
 	cout << "Number of elemnts: " << countElements(t, arrSize) << endl;
 
@@ -39,11 +40,10 @@ void generateArray(int* arr, int size, int min, int max) {
 		arr[i] = min + rand() % (max - min + 1);
 	}
 }
-void printArray(int* arr, int size) {
+void printArray(int* array, int size) {
 	for (int i = 0; i < size; i++) {
-		cout << arr[i] << " ";
+		printf("%d ", array[i]);
 	}
-	cout << endl;
 }
 
 int sumElements(int* arr, int size) {
